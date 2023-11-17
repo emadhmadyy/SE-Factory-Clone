@@ -63,11 +63,14 @@ const fsw_button = document.getElementById("FSW")
 const fsd_button = document.getElementById("FSD")
 const uix_button = document.getElementById("UIX")
 const program_body = document.getElementsByClassName("program-data")[0]
+const main_body = document.getElementsByClassName("manipulate")[0]
+console.log(main_body)
 let fcs_clicked = false
 let fsw_clicked = false
 let fsd_clicked = false
 let uix_clicked = false
 fcs_button.addEventListener("click",()=>{
+    main_body.style.backgroundColor = "rgb(255, 198, 53)"
     if(fcs_clicked == false){
         fcs_clicked = true
         fsw_clicked = false
@@ -101,6 +104,7 @@ fcs_button.addEventListener("click",()=>{
 })
 
 fsw_button.addEventListener("click",()=>{
+    main_body.style.backgroundColor = "rgb(40, 238, 167)"
     if(fsw_clicked == false){
         fcs_clicked = false
         fsw_clicked = true
@@ -134,6 +138,7 @@ fsw_button.addEventListener("click",()=>{
 
 })
 fsd_button.addEventListener("click",()=>{
+    main_body.style.backgroundColor = "rgb(152, 100, 218)"
     if(fsd_clicked == false){
         fcs_clicked = false
         fsw_clicked = false
@@ -166,6 +171,7 @@ fsd_button.addEventListener("click",()=>{
     }
 })
 uix_button.addEventListener("click",()=>{
+    main_body.style.backgroundColor ="rgb(251, 80, 142)"
     if(uix_clicked == false){
         fcs_clicked = false
         fsw_clicked = false
@@ -197,3 +203,9 @@ uix_button.addEventListener("click",()=>{
     <img src="./assets/images/uix.png" class="program-image" alt="fcs image">`
     }
 })
+
+menu_button = document.getElementById("menu")
+side_menu = document.getElementsByClassName("side-menu")[0]
+menu_button.addEventListener('click', ()=> {
+    side_menu.style.right = side_menu.style.right === '100vw' ? '0' : '100vw';
+});

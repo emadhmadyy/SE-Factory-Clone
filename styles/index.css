@@ -387,3 +387,64 @@
     gap: 15px;
     width: 100%;
 }
+.side-menu{
+    padding: 70px 70px;
+    background-color: rgba(35, 35, 35, .9);
+    position: absolute;
+    top: 0;
+    z-index: 6;
+    width: 100vw;
+    display: none;
+}
+.side-menu-container{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.side-menu-nav{
+    height: 50px;
+    max-width: 1340px;
+    display: flex;
+    justify-content:space-between;
+    align-items: stretch;
+}
+.side-menu-left-nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-btn{
+    color: #a5a6a9;
+    padding: 15px 20px;
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: none;
+}
+.account-container{
+    width: 40vw;
+    height: auto;
+    padding: 40px;
+    gap: 20px;
+    background-color: #363738;
+    border-radius: 20px;
+    flex-direction: column;
+    font-size: 14px;
+    display: flex;
+}
+
+.account-title{
+    text-align: left;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 1.4
+}
+
+.login-text{
+    color: #a5a6a9;
+    text-align: left;
+    flex: 0 auto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
