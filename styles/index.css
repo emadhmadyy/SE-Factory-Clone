@@ -144,13 +144,13 @@
 }
 
 .blackbtn{
-    background-color:rgba(35, 35, 35, .9);
+    background-color:#363738;
     color: #fcfcfc;
 }
 
 .whitebtn{
     background-color: #fcfcfc;
-    color: rgba(35, 35, 35, .9);
+    color: #363738;
 }
 
 /* ------------------- HELLO WORLD ------------------------- */
@@ -210,7 +210,7 @@
     background-color: #FCFCFD;
 }
 .text-white{
-    color: #FCFCFD
+    color: #FCFCFD;
 }
 .youtube-video-container{
     margin-top: 50px;
@@ -294,4 +294,96 @@
     color: #28eea7;
     padding-left: 20px;
     font-weight: 900
+}
+.programs-container{
+    margin-top: 50px
+}
+.tabs{
+    display: flex;
+}
+.tab{
+    border-radius: 10px 10px 0 0;
+    padding: 20px 50px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.fcs-clicked{
+    border-top-right-radius:20px ;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 0;
+}
+.clicked{
+    background-color: #363738 ;
+}
+.green{
+    color:#28eea7
+}
+.yellow{
+   color: rgb(255, 198, 53)
+}
+.purple{
+    color:rgb(152, 100, 218)
+}
+.pink{
+    color:rgb(251, 80, 142)
+}
+
+.border-rds{
+    border-radius: 20px;
+}
+.program-data{
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+}
+.program-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+.subsection-title{
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 1.4;
+}
+.subsection-details{
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.program-image{
+    width: 400px;
+    height: 400px;
+    min-height: 100px;
+    object-fit: cover;
+    border-radius: 10px
+}
+.date-section{
+    background-color: black;
+    color: #FCFCFD;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.blackbtn1{
+    text-decoration: none;
+    background-color: black;
+    color: #FCFCFD;
+    padding: 10px 20px;
+    text-align: right;
+    flex: 1;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.date-container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
 }
